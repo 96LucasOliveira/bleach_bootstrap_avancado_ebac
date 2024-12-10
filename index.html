@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-nr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./imagens/Bleach_Thousand-Year_Blood_War_Logo.png" alt="logo bleach" style="width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personagens">Personagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filmes">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#spoiler">Spoiler</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/ichigo.webp" alt="ichigo" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/bleach-tybw-op-3-64-uhq-wallpapers-link-with-all-in-the-v0-cokluukjq9xd1.webp" alt="ichigo" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/yuhababa.webp" alt="yhwach" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/grimmjw.webp" alt="grimmjow" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imagens/bleach-tybw-op-3-64-uhq-wallpapers-link-with-all-in-the-v0-750tovkjq9xd1.webp" alt="shunsui" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="imagens/bazz.webp" alt="bazz-b" />
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+            </div>
+        </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <section id="destaques" class="py-3">
+            <h3>Destaques</h3>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/dd9cf-17001486430911-1920.webp" class="card-img-top" alt="Imagem 1">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/02a3c8c0-4f1d-4610-bbb4-5b8e9468d7b1.webp" class="card-img-top" alt="Imagem 2">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/quincy.jpg" class="card-img-top" alt="Imagem 3">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+        <section id="personagens" class="py-3">
+            <h3>Personagens</h3>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagens/yhwach.jpg" class="card-img-top" alt="Imagem 1">
+                        <div class="card-img-overlay">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagens/shunsui.jpg" class="card-img-top" alt="Imagem 2">
+                        <div class="card-img-overlay">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="./imagens/urahara.jpg" class="card-img-top" alt="Imagem 3">
+                        <div class="card-img-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+        </section>
+        <div class="container">
+            <section id="filmes" class="py-3">
+                <h3>Filmes</h3>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/filme1.jpg" class="card-img-top" alt="Imagem 1">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/filme2.jpg" class="card-img-top" alt="Imagem 2">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="./imagens/hellarc.jpg" class="card-img-top" alt="Imagem 3">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="container">
+        <section id="spoiler" class="py-5" class="m-0">
+            <div class="container">
+                <h3 class="text-center mb-4">Me conte um spoiler</h3>
+                <form class="form-spoiler">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="spoiler">Spoiler</label>
+                        <textarea id="spoiler" name="spoiler" rows="5" placeholder="Compartilhe seu spoiler"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+        </div>
+    </div>
+    <footer id="rodape" class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span> © Bleach TYBW 2024 - Todos os direitos reservados</span>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

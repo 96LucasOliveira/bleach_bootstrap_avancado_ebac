@@ -1,0 +1,196 @@
+body {
+    background-color: lavender;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 56px; /* Define uma altura mínima */
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo preto translúcido */
+    backdrop-filter: blur(3px); /* Efeito de desfoque no fundo */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para destacar a navbar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil na parte inferior */
+}
+
+.navbar-brand img {
+    max-width: 140px; /* Tamanho do logo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    font-weight: bold;
+    margin: 0 15px; /* Espaçamento entre os itens */
+    transition: color 0.3s ease; /* Transição suave no hover */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ff0766; /* Cor amarela no hover e no ativo */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda do botão do menu */
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta a largura automaticamente */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 505px; /* Limita a altura máxima */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível */
+}
+
+#carousel-exemplo {
+    margin-bottom: -40px; /* Ajusta o espaçamento para cima */
+}
+
+
+section h3 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 16px;
+}
+
+.card {
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para hover */
+    border-radius: 30px; /* Adiciona bordas arredondadas aos cards */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Leve aumento no hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores das imagens do card */
+}
+
+.container {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.container > section {
+margin-top: 20px; /* Define um espaçamento menor entre seções */
+margin-bottom: 20px;
+}
+
+#spoiler {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px 0; /* Removido o auto para centralização */
+    text-align: center; /* Centraliza o texto dentro */
+}
+
+#spoiler h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center; /* Centraliza o título */
+}
+
+.form-spoiler {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    max-width: 350px; /* Limita a largura */
+    height: 38px; /* Define altura fixa */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    resize: none; /* Impede o redimensionamento da textarea */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group textarea {
+    height: 100px; /* Altura maior para a área de texto */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff0766;
+    box-shadow: 0 0 4px rgba(224, 2, 139, 0.3);
+}
+
+.btn-enviar {
+    background-color: #ff0766;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+.btn-enviar:hover {
+    background-color: #86045f;
+    transform: scale(1.03);
+}
+
+#rodape {
+    background-color: rgb(199, 199, 228); /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    font-size: 14px;
+}
+
+#rodape .social-icons a {
+    text-decoration: none;
+    font-size: 20px; /* Tamanho dos ícones */
+    transition: transform 0.3s ease;
+}
+
+#rodape .social-icons a:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    #spoiler {
+        max-width: 90%; /* Ajusta a largura da seção para dispositivos móveis */
+    }
+
+    .btn-enviar,
+    .form-group input,
+    .form-group textarea {
+        max-width: 100%; /* Permite que o formulário ocupe 100% da largura */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px; /* Altura menor para dispositivos móveis */
+    }
+}
+
+
+
